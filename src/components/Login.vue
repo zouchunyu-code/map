@@ -18,7 +18,7 @@ export default {
   methods:{
     login(){
       if(this.userName&&this.password){
-        sessionStorage.setItem('user_info','true')
+        sessionStorage.setItem('user_info',this.userName)
         this.$router.push('/map')
       }else{
         alert('请填写完整')
